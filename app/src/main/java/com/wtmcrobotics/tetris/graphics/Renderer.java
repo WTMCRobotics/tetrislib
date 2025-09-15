@@ -1,9 +1,7 @@
 package com.wtmcrobotics.tetris.graphics;
 import javax.swing.*;
-import java.awt.*;
-import GridRenderer;
 
-class Renderer {
+public class Renderer {
 	public int grid_size_x;
 	public int grid_size_y;
 	int[][] board; // [[ROW], [ROW], [ROW], ...]
