@@ -1,4 +1,4 @@
-package com.wtmcrobotics;
+package com.wtmcrobotics.tetris;
 
 public class OrderedPair {
     int x;
