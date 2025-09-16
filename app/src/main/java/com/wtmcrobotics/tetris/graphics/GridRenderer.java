@@ -2,7 +2,7 @@ package com.wtmcrobotics.tetris.graphics;
 import javax.swing.*;
 import java.awt.*;
 
-public class GridRenderer extends JPanel {
+class GridRenderer extends JPanel {
     private final int gridSizeX;
     private final int gridSizeY;
     private final int cellSize;
