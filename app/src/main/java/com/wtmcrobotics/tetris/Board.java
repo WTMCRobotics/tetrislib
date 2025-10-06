@@ -1,7 +1,10 @@
 package com.wtmcrobotics.tetris;
 
+import com.wtmcrobotics.tetris.Tetromino;
+
 public class Board {
     public Tile[][] board;
+    public Tetromino activetetromino;
     public Board() {
         for (int y = 0; y < 20; y++) {
             for (int x = 0; x < 10; x++) {
@@ -21,6 +24,13 @@ public class Board {
         return out;
     } 
 
-    
+    public void solidifyTetromino(){
+        activetetromino.getShape();
+        for (int y = 0; y <4; y++) {
+            for (int x = 0; x < 4; y++) {
+                board[activetetromino.y + y][activetetromino.x + x] = new Tile(activetetromino.states[activetetromino.rotation][y][x] != 0, activetetromino.states[activetetromino.rotation][y][x]);
+            }
+        }
+    }
 
 }
